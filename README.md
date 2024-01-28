@@ -1,5 +1,6 @@
-# simplenotes
+# Simple Notes
+A simple website project used to manage notes quickly.<br>
+Made by me, using only *Javascript* *CSS* and *HTML*.<br>
 
-A simple website to manage notes.
-Screenshot:
+## Screenshot:
 ![Alt Screenshot](Screenshot.png)
