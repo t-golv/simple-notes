@@ -1,2 +1,3 @@
 # simplenotes
- A simple website to manage sheets.
+ A simple website to manage notes.
+ 
