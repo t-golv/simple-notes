@@ -24,6 +24,10 @@ body {
   display: flex;
   position: relative;
   flex-direction: column;
+  animation-name: bgChange;
+  animation-duration: 5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
 }
 .header,
 .footer {
@@ -46,6 +50,9 @@ body {
   color: #bee9e8;
 }
 .logo {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-fill-color: #bee9e8;
+  -webkit-text-stroke-color: #62b6cb;
   font-size: 2rem;
 }
 .h-button {
@@ -55,6 +62,7 @@ body {
   cursor: pointer;
   border-radius: 50px;
   font-weight: 500;
+  font-size: 1.2rem;
   outline: 2px solid rgba(190, 233, 232, 0.8);
   border: none;
 }
@@ -186,4 +194,12 @@ body {
 }
 .note.red.editing .tools button {
   color: var(--bg-red);
+}
+@keyframes bgChange {
+  from {
+    background-color: #1b4965;
+  }
+  to {
+    background-color: #372269;
+  }
 }
