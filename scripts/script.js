@@ -65,7 +65,7 @@ function addNewNote(text = "") {
   });
   textArea.addEventListener("input", (e) => {
     const { value } = e.target;
-    main.innerHTML = value;
+    main.innerHTML = marked(value);
     updateLS();
   });
 

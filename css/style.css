@@ -99,21 +99,69 @@ body {
 }
 .note {
   box-shadow: 6 6 1px 0px;
-  width: 300px;
+  width: 350px;
   height: 400px;
   overflow-y: auto;
   box-shadow: 6px 6px 0 0 rgba(0, 0, 0, 0.473);
+  background-image: linear-gradient(
+    to top,
+    rgba(177, 127, 224, 0.2),
+    transparent
+  );
 }
 .note .main {
   padding: 1rem;
   font-weight: bold;
   word-wrap: break-word;
 }
+ul,
+ol {
+  margin-left: 20px;
+}
+li {
+  margin: 0.5rem 0;
+}
+.note .main h1 {
+  font-size: 1.3rem;
+  margin: -1rem 0 1rem;
+  text-align: center;
+}
+.note .main h2 {
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 1rem 0;
+}
+.note .main p {
+  text-align: justify;
+}
+.note .main a {
+  color: rgb(132, 0, 255);
+  font-weight: normal;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f181;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(161, 82, 214, 0.3);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 .note .tools {
   text-align: right;
   background-color: transparent;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: center;
   padding: 0.5rem;
 }
